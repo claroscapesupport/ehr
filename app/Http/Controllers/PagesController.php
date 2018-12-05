@@ -22,4 +22,9 @@ class PagesController extends Controller
     		'services' => ['Web Design','Programming', 'SEO']);
     	return view('pages.services')->with($data);
     }
+
+    public function ehr(){
+        $title = 'Electronic Health Records';
+        return view('pages.ehr')->with('title', $title);
+    }
 }
