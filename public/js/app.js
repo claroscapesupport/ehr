@@ -53986,6 +53986,7 @@ function FhirClient(p) {
     };
 
     if (!client.server.serviceUrl || !client.server.serviceUrl.match(/https?:\/\/.+[^\/]$/)) {
+      console.log("client server: " + client.server.serviceUrl);
       throw "Must supply a `server` property whose `serviceUrl` begins with http(s) " + 
         "and does NOT include a trailing slash. E.g. `https://fhir.aws.af.cm/fhir`";
     }
