@@ -27,4 +27,9 @@ class PagesController extends Controller
         $title = 'Electronic Health Records';
         return view('pages.ehr')->with('title', $title);
     }
+
+     public function ehrlaunch(){
+        $title = 'Electronic Health Records Launch';
+        return view('pages.ehrlaunch')->with('title', $title);
+    }
 }
