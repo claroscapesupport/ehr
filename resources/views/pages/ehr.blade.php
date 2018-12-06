@@ -5,6 +5,19 @@
 <p>This is the electronic health records page</p>
 
 
+<script type="text/javascript">
+    var fhirClient = FHIR.client({
+    serviceUrl: window.sessionStorage.smartServiceUrl,
+    patientId: window.sessionStorage.smartPatientId,
+    auth: {
+        token: window.sessionStorage.smartAuthToken,
+        type: window.sessionStorage.smartAuthType
+    }
+    });
+ 
+    var patient = fhirClient.patient;
+</script>
+
 
 
 <table id="obsTable">
