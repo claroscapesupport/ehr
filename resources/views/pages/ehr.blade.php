@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>{{$title}}</h1>
-<p>This is the electronic health records page updated</p>
+<p>This is the electronic health records page up</p>
 
 
 <script type="text/javascript">
