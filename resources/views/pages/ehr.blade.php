@@ -4,16 +4,6 @@
 <h1>{{$title}}</h1>
 <p>This is the electronic health records page</p>
 
-<script src="node_modules/fhirclient/fhir-client.js"></script>
-
-    <script>
-        FHIR.oauth2.authorize({
-            client_id: "c09a991f-97dc-4453-970e-ffd40b744d1d",
-            scope: "launch online_access patient/*.read"
-        });
-    </script>
-
-
 <script type="text/javascript">
     FHIR.oauth2.ready(function (fhirClient) {
         var patient = fhirClient.patient;
@@ -41,6 +31,7 @@
         <th>Value</th>
     </tr>
 </table>
+
 
 
 
