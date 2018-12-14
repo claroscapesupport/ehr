@@ -13,10 +13,12 @@ for(var b in window) {
 
 <script type="text/javascript">
     FHIR.oauth2.authorize({
-        client_id: "c09a991f-97dc-4453-970e-ffd40b744d1d",
-        scope: "launch online_access patient/*.read",   
-        redirect_uri: "https://claroscape.herokuapp.com/ehr",   
-        server: "https://api-v5-stu3.hspconsortium.org/DCTest/data"
+        client:{
+            client_id: "c09a991f-97dc-4453-970e-ffd40b744d1d",
+            scope: "launch online_access patient/*.read",   
+        },
+        //redirect_uri: "https://claroscape.herokuapp.com/ehr",   
+        //server: "https://api-v5-stu3.hspconsortium.org/DCTest/data"
     });
 
     FHIR.oauth2.ready(function (fhirClient) {
