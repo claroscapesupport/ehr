@@ -6,8 +6,9 @@
 
 
 <div id="result"></div>
+<script type="text/javascript">
     document.getElementById("result").innerHTML = "Test value: " + sessionStorage.test
-
+</script>
 
 <script type="text/javascript">
 
