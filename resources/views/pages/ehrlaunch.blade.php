@@ -13,7 +13,7 @@ for(var b in window) {
 
 <script type="text/javascript">
 
-    window.sessionStorage.setItem("test", "Test");
+    window.sessionStorage.setItem('test', 'Test');
 
     FHIR.oauth2.ready(function (fhirClient) {
     window.sessionStorage.setItem("smartServiceUrl", fhirClient.server.serviceUrl);
