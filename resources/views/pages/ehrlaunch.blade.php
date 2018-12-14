@@ -5,9 +5,9 @@
 <p>Launching....</p>
 
 
-<div id="result"></div>
+<div id="result">Result....</div>
 <script type="text/javascript">
-    document.getElementById("result").innerHTML = "Test value: " + sessionStorage.test
+    document.getElementById("result").innerHTML = "Test value: " + sessionStorage.test;
 </script>
 
 <script type="text/javascript">
