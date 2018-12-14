@@ -13,10 +13,10 @@ for(var b in window) {
 
 <script type="text/javascript">
 
-    window.sessionStorage.setItem('test', 'Test');
+    window.sessionStorage.test = "Test";
 
     FHIR.oauth2.ready(function (fhirClient) {
-    window.sessionStorage.setItem("smartServiceUrl", fhirClient.server.serviceUrl);
+    window.sessionStorage.smartServiceUrl = fhirClient.server.serviceUrl;
     window.sessionStorage.smartPatientId = fhirClient.patient.id;
     window.sessionStorage.smartAuthToken = fhirClient.server.auth.token;
     window.sessionStorage.smartAuthType = fhirClient.server.auth.type;
