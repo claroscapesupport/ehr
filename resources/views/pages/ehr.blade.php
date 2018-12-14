@@ -6,6 +6,7 @@
 
 
 <script type="text/javascript">
+    window.sessionStorage.test2 = "Test2";
     var fhirClient = FHIR.client({
     serviceUrl: window.sessionStorage.smartServiceUrl,
     patientId: window.sessionStorage.smartPatientId,
