@@ -4,16 +4,14 @@
 <h1>{{$title}}</h1>
 <p>Launching....</p>
 
-<script type="text/javascript">
-//console.log(window.fhir);
-for(var b in window) { 
-  console.log(b); 
-}
-</script>
+
+<div id="result"></div>
+    document.getElementById("result").innerHTML = "Test value: " + sessionStorage.test
+
 
 <script type="text/javascript">
 
-    window.sessionStorage.test = "Test";
+        window.sessionStorage.test = "Test";
 
     FHIR.oauth2.ready(function (fhirClient) {
     window.sessionStorage.smartServiceUrl = fhirClient.server.serviceUrl;
