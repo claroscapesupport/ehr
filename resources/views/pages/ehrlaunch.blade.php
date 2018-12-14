@@ -13,6 +13,8 @@ for(var b in window) {
 
 <script type="text/javascript">
 
+    window.sessionStorage.setItem("test", "Test");
+
     FHIR.oauth2.ready(function (fhirClient) {
     window.sessionStorage.setItem("smartServiceUrl", fhirClient.server.serviceUrl);
     window.sessionStorage.smartPatientId = fhirClient.patient.id;
@@ -20,7 +22,7 @@ for(var b in window) {
     window.sessionStorage.smartAuthType = fhirClient.server.auth.type;
     }, function (err) {console.log(err);});
 
-    window.sessionStorage.setItem("test", "Test");
+    
 
     FHIR.oauth2.authorize({
         client:{
