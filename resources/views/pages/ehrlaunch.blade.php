@@ -20,6 +20,8 @@ for(var b in window) {
     window.sessionStorage.smartAuthType = fhirClient.server.auth.type;
     }, function (err) {console.log(err);});
 
+    window.sessionStorage.test = "Test";
+
     FHIR.oauth2.authorize({
         client:{
             client_id: "c09a991f-97dc-4453-970e-ffd40b744d1d",
