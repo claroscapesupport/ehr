@@ -5,6 +5,11 @@
 <p>This is the electronic health records page up</p>
 
 
+<div id="result">Result....</div>
+<script type="text/javascript">
+    document.getElementById("result").innerHTML = "Test value: " + sessionStorage.test;
+</script>
+
 <p>
     <script type="text/javascript">
     window.sessionStorage.test;
